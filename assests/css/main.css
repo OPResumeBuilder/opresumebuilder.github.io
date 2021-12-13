@@ -22,7 +22,7 @@ Primary Rules
 */
 
 input {
-    min-width: 20px!important;
+    min-width: 40px!important;
     border: none;
     margin: 0;
     padding: 0px 0;
@@ -163,13 +163,15 @@ ul.skills {
     margin: 0 20px 0 0;
 }
 
-ul.skills li {
+ul.skills li,
+ul.skills input {
     list-style: none;
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-ul.skills li:last-child {
+ul.skills li:last-child,
+ul.skills input:last-child {
     margin: 0;
 }
 
