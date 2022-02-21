@@ -87,9 +87,25 @@ function add_education(elements) {
 
 }
 
-window.onload = (event) => {
+function resize_all_inpiut() {
     var all_inputs = document.body.getElementsByTagName('input');
     Array.from(all_inputs).forEach(input => {
         resizable(input);
     });
+}
+
+
+function add_element(element, element_to_add) {
+    Parrent = element.parentNode;
+
+    // var div = document.createElement('div');
+    // div.innerHTML = element_to_add;
+    // console.log(Parrent);
+    // child = Parrent.children[0];
+
+    // var clone = child.cloneNode(true);
+    Parrent.insertAdjacentHTML('afterbegin', element_to_add);
+    resize_all_inpiut();
 };
+
+window.onload = (event) => resize_all_inpiut();
