@@ -1,177 +1,34 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Op Resume</title>
+        <link rel="stylesheet" href="main.css">
+    </head>
+    
+    <body>
+        <!-- <a>Hello</a>
+        <a>Bye</a> -->
+        <div class="nav-bar-horizontal">
+            <a href="#home" class="nav-item animation-move-right animation-move-back">Home</a>
+            <a href="#about" class="nav-item animation-move-right animation-move-back">About</a>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <title>Resume Builder</title>
-    <link rel="stylesheet" href="assests/css/main.css" />
-</head>
-
-<body class="page">
-    <header>
-        <div class="section row">
-
-            <!-- Heading Name -->
-            <div class="col">
-                <div class="col-left">
-                    <input type="text" value="Jugal" size="2" style="font-weight:700" class="h1" />
-                    <input type="text" value="Manjeshwar" size="8" class="h1" />
+        <div class="sections">
+            <!-- Showing my product name -->
+            <section id="home">
+                <div class="typing-animation">
+                    <a id="product-name">OP Resume.</a>
                 </div>
-                <div class="col-right">
-                    <div class="contact-info col-right">
-                        <button class='add_element' type="button" onclick="add_element(this, 
-                        `<input class='contact' type='text' value='+910000091' class='a'/>`
-                        )">Add Contact Details</button>
-                    </div>
+
+                <div class="animation-delay-3s fade-up-animation">
+                    <a id="product-tagline">Power of <b>OpenSource</b></a>
                 </div>
-            </div>
-
+            </section>
+            <section id="about">
+                Hello2
+            </section>
         </div>
-    </header>
-
-    <div class="section row">
-        <div class="col">
-            <div class="col-2">
-                <h2>Skills</h2>
-            </div>
-            <div class="col-10">
-                <button class='add_element' style="position: absolute;" type="button" onclick="add_element(this, 
-                    `
-                    <ul class='skills' style='max-width:25%'>
-                        <input type='text' value='Insert Skill'>
-                    </ul>
-                    `
-                    )">Add Skills</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="section row">
-        <div class="col">
-            <div class="col-2">
-                <h2>Education</h2>
-            </div>
-            <div class="col-10">
-                <button class='add_element' style="position: absolute;" type="button" onclick="add_element(this, 
-                    `
-                    <div class='col'>
-                        <div style='min-width: 100%'>
-                            <input type='text' class='emph' value='Masters - Computer Science' />
-                        </div>
-                        <div style='min-width: 100%'>
-                            <input type='text' class='emph' value='Description' />
-                        </div>
-                        <div class='row'>
-                            <input value='New York, USA' class='col light' >
-                            <input class='col-right light' value='September 2013 - May 2015'>
-                        </div>
-                    </div>
-                    `
-                )">Add Skills</button>
-            </div>
-        </div>
-    </div>
-
-    <div class="section row">
-        <h2 class="col">Experience</h2>
-        <div class="section-text col-right">
-            <div class="row">
-                <div class="col">
-                    <h3>Google</h3>
-                </div>
-            </div>
-            <div class="row subsection">
-                <div class="emph col">Full stack engineer</div>
-                <div class="col-right light">July 2015 - Present</div>
-            </div>
-            <ul class="desc">
-                <li>YouTube Trust and Safety</li>
-        </div>
-        <div class="section-text col-right">
-            <div class="row">
-                <div class="col">
-                    <h3>Emotion - New York University</h3>
-                </div>
-            </div>
-            <div class="row subsection">
-                <div class="emph col">Research Assistant, Full Stack Engineer</div>
-                <div class="col-right light">June 2014 - August 2014</div>
-            </div>
-            <div>Started out as a tool to help collect data for a research project - <i>Lingering emotion in the
-                    experience of beauty</i>, is now a comprehensive app that simulates every step of the experiment and
-                automates the entire data collection process.
-            </div>
-            <ul class="desc">
-                <li>Designed and developed a mobile-friendly responsive web app from the ground-up that tracks touch
-                    events to calibrate and measure the distance between two fingers and detects gestures.</li>
-                <li>Ported the web app as a native mac OS app which involved writing a native node.js module that
-                    detects and generates DOM touch events from a mac trackpad.</li>
-                <li>Developed a RESTful server that extracts speech from recorded audio tracks by trimming background
-                    silence and normalizing gain.</li>
-                <li>Developed a proxy service to allow users to stream on-demand audio from a music streaming service on
-                    a mobile web app.</li>
-                <li>Built interactive audio and visual feedback using the HTML5 web audio api and SVG.</li>
-        </div>
-    </div>
-    <div class="section row">
-        <h2 class="col">Projects</h2>
-        <div class="section-text col-right">
-            <h3><a href="https://github.com/nuterian">github.com/nuterian</a></h3>
-        </div>
-    </div>
-
-    <div class="section row">
-        <h2 class="col">Honors</h2>
-        <div class="section-text col-right">
-            <div class="row">
-                <div class="col">
-                    <h3>SEARCC International School's Software Competition</h3>
-                </div>
-            </div>
-            <div class="row subsection">
-                <div class="emph col">Algorithmic Programming Competition</div>
-                <div class="col-right light">Fall 2007</div>
-            </div>
-            <div class="desc">Organized by the Computer Society of India, was part of a team of three to represent our
-                region at the national level finals. Finished <span class="emph">second</span> by solving the maximum
-                number of problems.
-            </div>
-        </div>
-        <div class="section-text col-right">
-            <div class="row">
-                <div class="col">
-                    <h3>Codechef Gamer's Challenge</h3>
-                </div>
-            </div>
-            <div class="row subsection">
-                <div class="emph col">Actionscript/HTML5 Game Development Competition</div>
-                <div class="col-right light">Summer 2009</div>
-            </div>
-            <div class="desc">Developed a prototypical game using Actionscript on the Flash platform, in less than 48
-                hours. Received an honorable mention award for the <span class="emph">Best Looking Game</span>.
-            </div>
-        </div>
-
-        <div class="section row">
-            <h2 class="col">Interests</h2>
-            <div class="section-text col-right"><span class="key">Intelligent systems</span> <span class="key">Machine
-                    learning</span> <span class="key">Data visualization</span> <span class="key">Computer vision
-                    &amp;
-                    graphics</span> <span class="key">Information networks</span> <span class="key">User experience
-                    /
-                    interaction design</span> </div>
-        </div>
-
-    </div>
-
-    <footer>
-        <script src="assests/js/main.js"></script>
-    </footer>
-</body>
-
+        
+    </body>
 </html>
-<form method="GET">
-
-
-
-</form>
