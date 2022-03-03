@@ -1,0 +1,38 @@
+.col {
+    min-width: 100%;
+    height: fit-content;
+}
+.col-1{ max-width: 8.33%;}
+.col-2{
+    max-width: 16.66%;
+}
+.col-3{
+    max-width: 25%;
+}
+.col-4{
+    max-width: 33.33;
+}
+.col-5{
+    max-width: 41.66%;
+}
+.col-8{
+    max-width: 66.66%;
+}
+.col-9{
+    max-width: 74.97%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+.col-11{
+    max-width: 91.63%;
+}
+.col-12{
+    max-width: 99.96%;
+}
+
+/* All Display Classes */
+.flex{
+    display: flex;
+}
