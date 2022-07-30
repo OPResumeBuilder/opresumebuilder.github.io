@@ -71,13 +71,15 @@
 }
 
 .float_remove_button .remove_button {
-    display: none;
+    display: inline-block;
+    opacity: 0;
 }
 
 .float_remove_button input:focus+.remove_button {
     /* display: flex;
     animation: show-remove-button 1s steps(50) forwards; */
     display: inline-block;
+    opacity: 1;
 }
 
 @keyframes show-remove-button {

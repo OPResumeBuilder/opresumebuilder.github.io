@@ -48,7 +48,7 @@ function add_element(element, element_to_add) {
 // remove parrent element 
 function remove_me(element) {
     parent = element.parentNode;
-    // console.log(element.previousSibling);
+    console.log('removing : ' + parent);
     parent.parentNode.removeChild(parent);
 }
 
