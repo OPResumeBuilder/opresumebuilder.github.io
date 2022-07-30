@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Resume Builder</title>
     <link rel="stylesheet" href="test_resume.css" />
+    <link rel="stylesheet" href="../../op_style.css" />
+    <script src="../../op_script_functions.js"></script>
 </head>
 
 <body class="page">
@@ -18,9 +20,11 @@
                     <input type="text" value="Manjeshwar" size="8" class="h1" />
                 </div>
                 <div class="col-right">
-                    <div class="contact-info col-right">
+                    <div class="contact-info col-right info_collector">
                         <button class='add_element' type="button" onclick="add_element(this, 
-                        `<input class='contact' type='text' value='+910000091' class='a'/>`
+                        `
+                        <input class='contact' onclick=' add_remove_button(this); ' type='text' value='+910000091' class='a'/>
+                        `
                         )">Add Contact Details</button>
                     </div>
                 </div>
@@ -38,7 +42,7 @@
                 <button class='add_element' style="position: absolute;" type="button" onclick="add_element(this, 
                     `
                     <ul class='skills' style='max-width:25%'>
-                        <input type='text' value='Insert Skill'>
+                        <input type='text' onfocusout='del_remove_button(this);' onclick=' add_remove_button(this); ' value='Insert Skill'>
                     </ul>
                     `
                     )">Add Skills</button>
@@ -98,18 +102,13 @@
                 <div class="col-right light">June 2014 - August 2014</div>
             </div>
             <div>Started out as a tool to help collect data for a research project - <i>Lingering emotion in the
-                    experience of beauty</i>, is now a comprehensive app that simulates every step of the experiment and
-                automates the entire data collection process.
+                    experience of beauty</i>, is now a comprehensive app that simulates every step of the experiment and automates the entire data collection process.
             </div>
             <ul class="desc">
-                <li>Designed and developed a mobile-friendly responsive web app from the ground-up that tracks touch
-                    events to calibrate and measure the distance between two fingers and detects gestures.</li>
-                <li>Ported the web app as a native mac OS app which involved writing a native node.js module that
-                    detects and generates DOM touch events from a mac trackpad.</li>
-                <li>Developed a RESTful server that extracts speech from recorded audio tracks by trimming background
-                    silence and normalizing gain.</li>
-                <li>Developed a proxy service to allow users to stream on-demand audio from a music streaming service on
-                    a mobile web app.</li>
+                <li>Designed and developed a mobile-friendly responsive web app from the ground-up that tracks touch events to calibrate and measure the distance between two fingers and detects gestures.</li>
+                <li>Ported the web app as a native mac OS app which involved writing a native node.js module that detects and generates DOM touch events from a mac trackpad.</li>
+                <li>Developed a RESTful server that extracts speech from recorded audio tracks by trimming background silence and normalizing gain.</li>
+                <li>Developed a proxy service to allow users to stream on-demand audio from a music streaming service on a mobile web app.</li>
                 <li>Built interactive audio and visual feedback using the HTML5 web audio api and SVG.</li>
         </div>
     </div>
@@ -132,9 +131,7 @@
                 <div class="emph col">Algorithmic Programming Competition</div>
                 <div class="col-right light">Fall 2007</div>
             </div>
-            <div class="desc">Organized by the Computer Society of India, was part of a team of three to represent our
-                region at the national level finals. Finished <span class="emph">second</span> by solving the maximum
-                number of problems.
+            <div class="desc">Organized by the Computer Society of India, was part of a team of three to represent our region at the national level finals. Finished <span class="emph">second</span> by solving the maximum number of problems.
             </div>
         </div>
         <div class="section-text col-right">
@@ -147,8 +144,7 @@
                 <div class="emph col">Actionscript/HTML5 Game Development Competition</div>
                 <div class="col-right light">Summer 2009</div>
             </div>
-            <div class="desc">Developed a prototypical game using Actionscript on the Flash platform, in less than 48
-                hours. Received an honorable mention award for the <span class="emph">Best Looking Game</span>.
+            <div class="desc">Developed a prototypical game using Actionscript on the Flash platform, in less than 48 hours. Received an honorable mention award for the <span class="emph">Best Looking Game</span>.
             </div>
         </div>
 

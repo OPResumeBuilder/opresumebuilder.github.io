@@ -1,25 +1,18 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     scroll-behavior: smooth;
     /* scroll-snap-type: y mandatory; */
 }
 
-::-webkit-scrollbar { 
+::-webkit-scrollbar {
     width: 0 !important
 }
 
-html{
-    /*  */
-}
-.row
-{
+.row {
     display: flex;
     width: 100%;
-    
 }
 
 body {
@@ -31,60 +24,51 @@ body {
     /* background: yellow; */
 }
 
-.nav-bar-horizontal
-{
+.nav-bar-horizontal {
     /* display: none; */
     display: flex;
     flex-direction: column;
-
     background: rgb(48, 48, 48);
-
     height: 100vh;
     max-width: 6rem;
-
     padding: 3rem 1rem;
-
     position: fixed;
 }
 
-.nav-bar-horizontal a{
+.nav-bar-horizontal a {
     margin: 0.3em;
-    
     text-decoration: none;
     color: white;
-
     font-size: 1em;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.sections{
+.sections {
     margin-left: 5.26rem;
     /* display: grid;*/
     right: 0;
     display: flex;
     flex-direction: column;
-
     width: 100%;
 }
 
-section{
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    width: 100%;    
+    width: 100%;
 }
 
-.typing-animation a#product-name{
+.typing-animation a#product-name {
     font-size: 4em;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0.05em;
     position: relative;
 }
 
-.typing-animation a#product-name::before
-{
+.typing-animation a#product-name::before {
     content: '';
     top: 0;
     bottom: 0;
@@ -93,8 +77,7 @@ section{
     position: absolute;
 }
 
-.typing-animation a#product-name::after
-{
+.typing-animation a#product-name::after {
     content: '';
     top: 0;
     bottom: 0;
@@ -102,36 +85,32 @@ section{
     left: 0;
     position: absolute;
 }
-.typing-animation a#product-name::before
-{
+
+.typing-animation a#product-name::before {
     background: white;
-    animation: 
-    typing-animation 3s steps(9) forwards;
+    animation: typing-animation 3s steps(9) forwards;
 }
 
-.typing-animation #product-name::after
-{
+.typing-animation #product-name::after {
     border: 2px solid black;
-    animation: 
-    typing-animation 3s steps(9) forwards,
-    cursor-blink-animation 500ms steps(9) infinite;
+    animation: typing-animation 3s steps(9) forwards, cursor-blink-animation 500ms steps(9) infinite;
 }
 
 .fade-up-animation {
     color: transparent;
-    animation: 
-    animation-fade-up 2s ease-in-out forwards;
+    animation: animation-fade-up 2s ease-in-out forwards;
 }
 
-.fade-up-animation a#product-tagline
-{
+.fade-up-animation a#product-tagline {
     font-size: 1em;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-.animation-delay-3s{
+.animation-delay-3s {
     animation-delay: 3s;
 }
+
+
 /* Animation */
 
 .animation-move-right:hover {
@@ -140,19 +119,19 @@ section{
     transition: all 0.3s ease;
 }
 
-.animation-move-back{
+.animation-move-back {
     transition: all 0.3s ease;
 }
 
 @keyframes typing-animation {
-    to{
+    to {
         left: 100%;
         /* background: transparent; */
     }
 }
 
 @keyframes cursor-blink-animation {
-    to{
+    to {
         border-color: transparent;
     }
 }
@@ -161,7 +140,7 @@ section{
     from {
         transform: translateY(30px);
     }
-    to{
+    to {
         color: black;
         transform: translateY(0px);
     }
